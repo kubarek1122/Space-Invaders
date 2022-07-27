@@ -17,6 +17,8 @@ public class EnemyController : MonoBehaviour
     private float _fireRate;
     private int _health;
 
+    private bool _isFiring = false;
+
     private MeshFilter _meshFilter;
 
     private Action<EnemyController> _destroyAction;
@@ -32,6 +34,8 @@ public class EnemyController : MonoBehaviour
     /// </summary>
     public void StartFire()
     {
+        if (_isFiring) return;
+        _isFiring = true;
         InvokeRepeating(nameof(Fire), Random.Range(0f, 1f / _fireRate) + initialFireDelay, 1f / _fireRate);
     }
 
@@ -40,6 +44,8 @@ public class EnemyController : MonoBehaviour
     /// </summary>
     public void StopFire()
     {
+        if (!_isFiring) return;
+        _isFiring = false;
         CancelInvoke();
     }
 
