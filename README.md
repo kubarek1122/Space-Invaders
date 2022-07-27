@@ -6,7 +6,7 @@ Small space invaders clone made in Unity
 ## Gameplay Features
 - 3 difficulty levels
 - 3 types of enemies
-- Support for gamepads(in editor)
+- Support for gamepads
 
 ## Technical Features
 - State machine based game flow management
