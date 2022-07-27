@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4f3b6ee331ff646bf99181fee7c9a9, type: 3}
+  m_Name: NormalEnemy
+  m_EditorClassIdentifier: 
+  mesh: {fileID: -2422165522289261425, guid: e094f9af8772a81448149faede1e6bb7, type: 3}
+  projectileMaterial: {fileID: 2100000, guid: a580c8fd8091e24498c2c1d3d343f583, type: 2}
+  health: 2
+  damage: 1
+  fireRate: 0.09
+  projectileSpeed: 9
+  points: 250
